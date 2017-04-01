@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>processing js example</title>
+    <script src="processing.js"></script>
+
+  </head>
+
+  <body>
+    <h1>Processing.js</h1>
+
+    <script type="text/processing" data-processing-target="canvas">
+
+    size(800,600);
+    background("white");
+    noLoop();
+    noStroke();
+
+    //head square
+    fill(33, 20, 20);
+    rect(70, 100, 260, 300);
+
+    // left eye
+    fill(237, 209, 178);
+    ellipse(113, 250, 25, 25);
+    fill(171, 113, 46);
+    ellipse(113, 250, 15, 15);
+
+    // right eye
+    fill(237, 209, 178);
+    ellipse(292, 250, 25, 25);
+    fill(171, 113, 46);
+    ellipse(292, 250, 15, 15);
+
+    //left ear
+    fill(240, 79, 138);
+    triangle(56, 30, 70, 200, 150, 100);
+    fill(240, 79, 138);
+    triangle(56, 31, 65, 10, 149, 100);
+    fill(33, 20, 20);
+    triangle(45, 180, 56, 30, 70, 200);
+
+    //white stripe
+    fill(237, 220, 220);
+    rect (170, 100, 60, 150);
+
+    //white background shapes
+    fill(247, 244, 244);
+    triangle (90, 350, 70, 400, 70, 300 );
+    fill(247, 244, 244);
+    triangle (310, 350, 330, 400, 330, 300 );
+
+    //right ear
+    fill(240, 79, 138); //main
+    triangle(339, 30, 331, 200, 250, 100);
+    fill(240, 79, 138); //small
+    triangle(340, 30, 330, 10, 251, 100);
+    fill(33, 20, 20); //black
+    triangle(350, 180, 339, 30, 330, 200);
+
+    //muzzle white
+    fill(237, 220, 220);
+    triangle(117, 292, 199, 212, 201, 330);
+    triangle(118, 292, 109, 380, 203, 330);
+    //left
+    fill(237, 220, 220);
+    triangle(283, 292, 198, 212, 200, 330);
+    triangle(282, 292, 295, 380, 198, 329);
+    //right
+
+    //nose
+    fill(33, 20, 20);
+    rect(175, 249, 50, 50);
+
+    //grey
+    fill(176, 169, 169);
+    triangle(175, 280, 214, 324, 150, 358);
+
+    triangle(225, 280, 188, 324, 250, 357);
+    triangle(217, 300, 205, 324, 185, 300);
+
+
+
+    // void draw() {
+    // }
+    //
+    // void mouseMoved() {
+    //   stroke(255);
+    //   point(mouseX, mouseY);
+    //   redraw();
+    // }
+    //
+    // void mousePressed() {
+    //   line(0,mouseY,width,mouseY);
+    //   line(mouseX,0,mouseX,height);
+    //   println(mouseX, mouseY);
+    // }
+
+      </script>
+      <canvas id="canvas"></canvas>
+
+
+
+
+
+  </body>
+</html>
